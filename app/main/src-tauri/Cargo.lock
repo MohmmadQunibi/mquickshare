@@ -2850,6 +2850,70 @@ dependencies = [
 ]
 
 [[package]]
+name = "mqs_lib"
+version = "1.0.0-alpha"
+dependencies = [
+ "anyhow",
+ "base64 0.22.1",
+ "bluer",
+ "btleplug",
+ "bytes",
+ "dbus",
+ "directories",
+ "futures",
+ "get_if_addrs",
+ "hex",
+ "hkdf",
+ "hmac",
+ "libaes",
+ "log",
+ "mdns-sd",
+ "mime_guess",
+ "num-bigint",
+ "once_cell",
+ "p256",
+ "prost",
+ "prost-build",
+ "rand 0.9.0",
+ "serde",
+ "sha2",
+ "sys_metrics 0.2.7 (git+https://github.com/Martichou/sys_metrics)",
+ "tokio",
+ "tokio-util",
+ "tracing-subscriber",
+ "ts-rs",
+ "uuid",
+]
+
+[[package]]
+name = "mquickshare"
+version = "1.0.0-alpha"
+dependencies = [
+ "anyhow",
+ "fern",
+ "humantime",
+ "log",
+ "mqs_lib",
+ "notify-rust",
+ "serde",
+ "serde_json",
+ "sys_metrics 0.2.7 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-autostart",
+ "tauri-plugin-clipboard-manager",
+ "tauri-plugin-dialog",
+ "tauri-plugin-notification",
+ "tauri-plugin-process",
+ "tauri-plugin-shell",
+ "tauri-plugin-single-instance",
+ "tauri-plugin-store",
+ "time",
+ "tokio",
+ "tokio-util",
+]
+
+[[package]]
 name = "muda"
 version = "0.15.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4217,70 +4281,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "windows-sys 0.59.0",
-]
-
-[[package]]
-name = "mqs_lib"
-version = "0.11.5"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "bluer",
- "btleplug",
- "bytes",
- "dbus",
- "directories",
- "futures",
- "get_if_addrs",
- "hex",
- "hkdf",
- "hmac",
- "libaes",
- "log",
- "mdns-sd",
- "mime_guess",
- "num-bigint",
- "once_cell",
- "p256",
- "prost",
- "prost-build",
- "rand 0.9.0",
- "serde",
- "sha2",
- "sys_metrics 0.2.7 (git+https://github.com/Martichou/sys_metrics)",
- "tokio",
- "tokio-util",
- "tracing-subscriber",
- "ts-rs",
- "uuid",
-]
-
-[[package]]
-name = "mquickshare"
-version = "0.11.5"
-dependencies = [
- "anyhow",
- "fern",
- "humantime",
- "log",
- "notify-rust",
- "mqs_lib",
- "serde",
- "serde_json",
- "sys_metrics 0.2.7 (registry+https://github.com/rust-lang/crates.io-index)",
- "tauri",
- "tauri-build",
- "tauri-plugin-autostart",
- "tauri-plugin-clipboard-manager",
- "tauri-plugin-dialog",
- "tauri-plugin-notification",
- "tauri-plugin-process",
- "tauri-plugin-shell",
- "tauri-plugin-single-instance",
- "tauri-plugin-store",
- "time",
- "tokio",
- "tokio-util",
 ]
 
 [[package]]

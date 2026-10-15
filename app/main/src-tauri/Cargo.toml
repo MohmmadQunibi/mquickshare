@@ -1,6 +1,6 @@
 [package]
 name = "mquickshare"
-version = "0.11.5"
+version = "1.0.0-alpha"
 default-run = "mquickshare"
 edition = "2021"
 authors = ["martichou"]
